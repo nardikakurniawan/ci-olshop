@@ -145,8 +145,11 @@
         <div class="col-md-10 mx-auto">
           <div class="card">
             <div class="card-header">
-              <span>Pengguna</span>
-              <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">
+              <span>Kategori</span>
+              <a
+                href="/admin-category-form.html"
+                class="btn btn-sm btn-secondary"
+              >
                 Tambah
               </a>
               <div class="float-right">
@@ -159,10 +162,10 @@
                       class="form-control form-control-sm text-center"
                     />
                     <div class="input-group-append">
-                      <button type="submit" class="btn btn-sm btn-secondary">
+                      <button type="submit" class="btn btn-sm btn-info">
                         <i class="fas fa-search"></i>
                       </button>
-                      <a href="#" class="btn btn-secondary btn-sm">
+                      <a href="#" class="btn btn-info btn-sm">
                         <i class="fas fa-eraser"></i>
                       </a>
                     </div>
@@ -175,24 +178,37 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Pengguna</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Status</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Slug</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
+                    <td>Laptops</td>
+                    <td>laptops</td>
                     <td>
-                      <p>
-                        <img src="https://placehold.co/70x70" alt="" /> Admin
-                      </p>
+                      <form action="#">
+                        <a href="#">
+                          <button class="btn btn-sm">
+                            <i class="fas fa-edit text-info"></i>
+                          </button>
+                        </a>
+                        <button
+                          type="submit"
+                          class="btn btn-sm"
+                          onclick="return confirm('are you sure?')"
+                        >
+                          <i class="fas fa-trash text-danger"></i>
+                        </button>
+                      </form>
                     </td>
-                    <td>admin@gmail.com</td>
-                    <td>Admin</td>
-                    <td>Aktif</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Smartphones</td>
+                    <td>smartphones</td>
                     <td>
                       <form action="#">
                         <a href="#">
