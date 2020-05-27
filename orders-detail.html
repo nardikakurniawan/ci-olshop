@@ -12,7 +12,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Jekyll v4.0.1" />
-    <title>Cart | CIShop</title>
+    <title>Order Detail | CIShop</title>
 
     <link
       rel="canonical"
@@ -111,12 +111,33 @@
 
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3">
           <div class="card mb-3">
+            <div class="card-header">Menu</div>
+            <div class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="/profile.html">Profile</a>
+              </li>
+              <li class="list-group-item">
+                <a href="/order.html">Orders</a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card">
             <div class="card-header">
-              Card
+              Detail Order #012345321
+              <div class="float-right">
+                <span class="badge badge-pill badge-info"
+                  >Menunggu Pembayaran</span
+                >
+              </div>
             </div>
             <div class="card-body">
+              <p>Nama : Nama Penerima</p>
+              <p>Telepon : 0812234562</p>
+              <p>Alamat : jln. Konoha, No.9 Akatsuki</p>
               <table class="table">
                 <thead>
                   <tr>
@@ -124,7 +145,6 @@
                     <th class="text-center">Harga</th>
                     <th class="text-center">Jumlah</th>
                     <th class="text-center">Subtotal</th>
-                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -136,46 +156,20 @@
                       </p>
                     </td>
                     <td class="text-center">Rp100.000,-</td>
-                    <td>
-                      <form action="">
-                        <div class="input-group">
-                          <input
-                            type="number"
-                            class="form-control text-center"
-                            value="1"
-                          />
-                          <div class="input-group-append">
-                            <button type="submit" class="btn btn-info">
-                              <i class="fas fa-check"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </td>
+                    <td class="text-center">1</td>
                     <td class="text-center">Rp100.000,-</td>
-                    <td>
-                      <form action="">
-                        <button type="submit" class="btn btn-danger">
-                          <i class="fas fa-trash-alt"></i>
-                        </button>
-                      </form>
-                    </td>
                   </tr>
                   <tr>
                     <td colspan="3"><strong>Total:</strong></td>
                     <td class="text-center"><strong>Rp100.000,-</strong></td>
-                    <td></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="card-footer">
-              <a href="/checkout.html" class="btn btn-success float-right">
-                Pembayaran <i class="fas fa-angle-right"></i>
-              </a>
-              <a href="/index.html" class="btn btn-warning text-white">
-                <i class="fas fa-angle-left"></i> Kembali Belanja
-              </a>
+              <a href="/orders-confirm.html" class="btn btn-success"
+                >Konfirmasi Pembayaran</a
+              >
             </div>
           </div>
         </div>
