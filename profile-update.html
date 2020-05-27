@@ -12,7 +12,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Jekyll v4.0.1" />
-    <title>Profile | CIShop</title>
+    <title>Edit Profile | CIShop</title>
 
     <link
       rel="canonical"
@@ -49,9 +49,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link" href="/index.html">
+                Home <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -61,12 +61,13 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Manage</a
               >
+                Manage
+              </a>
               <div class="dropdown-menu" aria-labelledby="dropdown-1">
-                <a href="/admin-category.html" class="dropdown-item"
-                  >Category</a
-                >
+                <a href="/admin-category.html" class="dropdown-item">
+                  Category
+                </a>
                 <a href="/admin-product.html" class="dropdown-item">Product</a>
                 <a href="/admin-order.html" class="dropdown-item">Order</a>
               </div>
@@ -96,8 +97,9 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Admin</a
               >
+                Admin
+              </a>
               <div class="dropdown-menu" aria-labelledby="dropdown-2">
                 <a href="/profile.html" class="dropdown-item">Profile</a>
                 <a href="/order.html" class="dropdown-item">Orders</a>
@@ -125,24 +127,37 @@
           </div>
         </div>
         <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <img src="https://placehold.co/150x200" alt="" />
-                </div>
-              </div>
+          <div class="card">
+            <div class="card-header">
+              Formulir Profile
             </div>
-            <div class="col-md-8">
-              <div class="card">
-                <div class="card-body">
-                  <p>Nama: Dika</p>
-                  <p>Email: nardikakurniawan20@gmail.com</p>
-                  <a href="/profile-update.html" class="btn btn-primary">
-                    Edit
-                  </a>
+            <div class="card-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="">Nama</label>
+                  <input type="text" class="form-control" required autofocus />
+                  <small class="form-text text-danger">Nama Harus Diisi.</small>
                 </div>
-              </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="email" class="form-control" required />
+                  <small class="form-text text-danger">
+                    Email Harus Diisi.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="">Password</label>
+                  <input type="password" class="form-control" />
+                  <small class="form-text text-danger">
+                    Password Harus Diisi.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="">Foto</label>
+                  <input type="file" name="photo" id="" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+              </form>
             </div>
           </div>
         </div>
