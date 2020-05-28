@@ -1,2 +1,2 @@
 # ci-olhop
- online shop menggunakan Codeigniter 3
+ Template Online Shop sederhana menggunakan bootstrap 4
